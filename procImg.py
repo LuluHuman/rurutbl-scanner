@@ -114,16 +114,16 @@ def procImg(path, isEven, filename):
         for subi in dat:
             subj = dat[subi]
             for x in range(subj["length"]):
-                if not (curp % 2 == 0):
-                    time[1] = time[1] + 15
-                    if time[1] >= 60:
-                        time[0] += 1
-                        time[1] -= 60
-                else:
-                    time[1] += 20
-                    if time[1] >= 60:
-                        time[0] += 1
-                        time[1] -= 60
+                #if not (curp % 2 == 0):
+                #    time[1] = time[1] + 15
+                #    if time[1] >= 60:
+                #        time[0] += 1
+                #        time[1] -= 60
+                #else:
+                time[1] += 20
+                if time[1] >= 60:
+                    time[0] += 1
+                    time[1] -= 60
                 curp = + curp + 1
 
             total = ""
